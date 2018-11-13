@@ -1,10 +1,10 @@
 # Java-RpgGame-Practice
 Just for personal program practice
 ==================================================
-#    Role
+# Role
 # 2.SwordsMan
 # 3.Magician
 ==================================================
-#    Interface
+# Interface
 # 1.Fighting
 # 2.Cureing
