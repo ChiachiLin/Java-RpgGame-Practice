@@ -1,9 +1,9 @@
 package Role;
 
 public class Magician extends Role implements Cureing{
-	public Magician(String name, int blood, int level) {
-		super(name, blood);
-		this.level = level;
+	public Magician(String name, int blood, int level,int atk) {
+		super(name, blood,level);
+		this.atk = atk;
 	}
 
 	@Override
@@ -18,7 +18,9 @@ public class Magician extends Role implements Cureing{
 	public void cure() {
 		System.out.print("ชvยก");
 	}
-
+	public  int setAtk() {
+		return super.atk=super.atk+15;
+	}
 	}
 
 
