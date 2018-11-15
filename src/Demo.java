@@ -5,10 +5,8 @@ import Role.*;
 public class Demo {
 
 	private static Scanner scanner;
-	private static int job;
+	private static int job = 0;
 	private static String name;
-	private static String chioce;
-
 	public static void main(String args[]) {
 		System.out.println("Welcome to Newworld! ");
 		System.out.print("What is your name,Adventurer ? ");
@@ -26,16 +24,15 @@ public class Demo {
 		name = scanner.nextLine();
 		System.out.println("Hello!" + name);
 	}
-	public static String chiocejob() {
+	public static SwordsMan chiocejob() {
 		try{scanner = new Scanner(System.in);
 		System.out.print("Your chioce is ? :");
 		job = scanner.nextInt();
 		if (job == 1) {
-			new SwordsMan(name, 100, 1, 10);
-			
-			System.out.println("Congratulations! You become a Swordsman. ");
+			SwordsMan chioce = new SwordsMan(name, 100, 1, 10);
+				return chioce;
 				} else if (job == 2) {
-			new Magician(name, 80, 1, 15);
+			Magician chioce = new Magician(name, 80, 1, 15);
 			System.out.println("Congratulations! You become a Magician. ");
 		} else {
 			System.out.println("The chioce is not in the list! please choose again!");
@@ -46,7 +43,7 @@ public class Demo {
 			System.out.println("Please choose again!");
 			chiocejob();
 			}
-		return chioce;
+		return chiocejob();
 				}
 					
 	}
