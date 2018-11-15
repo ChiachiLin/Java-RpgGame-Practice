@@ -48,7 +48,8 @@ public class Demo {
 			System.out.println("Please choose again!");
 			chiocejob();
 		}
-		return chiocejob();
+		return null;
+		
 	}
 
 }
